@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rectangle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- River curvature decorative wave representing Padma-Jamuna -->
+  <path d="M 0 380 C 140 330, 260 440, 512 360 L 512 512 L 0 512 Z" fill="#0891b2" opacity="0.35" />
+  <path d="M 0 420 C 180 370, 320 480, 512 410 L 512 512 L 0 512 Z" fill="#06b6d4" opacity="0.25" />
+
+  <!-- Road grid lines -->
+  <path d="M 60 180 L 452 300" stroke="#14b8a6" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+  <path d="M 120 400 L 380 90" stroke="#2dd4bf" stroke-width="12" stroke-linecap="round" opacity="0.45" />
+
+  <!-- Map Pin Badge -->
+  <g filter="url(#shadow)">
+    <!-- Pin body -->
+    <path d="M 256 100 C 185 100 128 157 128 228 C 128 320 256 420 256 420 C 256 420 384 320 384 228 C 384 157 327 100 256 100 Z" fill="#f8fafc" />
+    <!-- Pin inner circle -->
+    <circle cx="256" cy="226" r="72" fill="#0f766e" />
+  </g>
+
+  <!-- Bengali letter "আ" for Aminpur (stylized vector) -->
+  <text x="256" y="258" font-family="'Noto Sans Bengali', 'SolaimanLipi', sans-serif" font-size="78" font-weight="bold" fill="#ffffff" text-anchor="middle">আ</text>
+
+  <!-- Compass / North indicator dot -->
+  <circle cx="256" cy="145" r="9" fill="#f59e0b" />
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "আমিনপুর ম্যাপ — Aminpur Map",
+  "description": "পাবনা জেলার আমিনপুর থানা ও আশপাশের এলাকার আধুনিক ডিজিটাল ম্যাপ, পিডব্লিউএ ও অফলাইন নেভিগেশন অ্যাপ।",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
